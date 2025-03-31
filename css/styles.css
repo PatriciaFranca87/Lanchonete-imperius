@@ -1,0 +1,192 @@
+/* Estilos gerais */
+@import url(' https://fonts.cdnfonts.com/css/spqr ');
+@import url('https://fonts.cdnfonts.com/css/harry-potter'); 
+
+               
+body {
+    font-family: 'cambria';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Evitar rolagem na página */
+    color: antiquewhite;
+}
+.nome{
+    font-size: 20px;
+    font-family:'Harry Potter';
+}
+
+.marquee { 
+    font-family: 'spqr', sem serifa; 
+    font-size: 25px;
+    color: rgba(248, 248, 238, 0.921);
+    width: 100%;
+}
+
+/* Fundo gradiente de vermelho para preto (da esquerda superior para a direita inferior) */
+.gradient-background {
+    background-image:url(../imagens/fundo6.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Container principal */
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px; /* Diminuir o espaçamento interno */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url(../imagens/fundo16.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Ícones das redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, rgb(190, 117, 65), rgb(125, 74, 74));
+    padding: 10px ;
+    margin-bottom: 10px; /* Reduzir o espaço entre os ícones e o próximo conteúdo */
+    margin: 0 auto;
+    width: 800px;
+    border-radius: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 20px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efeito hover nos ícones das redes sociais */
+.social-icons a:hover {
+    color: orange; /* Muda a cor para laranja quando o mouse passa sobre os ícones */
+}
+
+/* Cardápio */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /* background-color: rgba(255, 255, 255, 0.8); /* Transparência */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px; /* Diminuir espaço entre o cardápio e o resumo */
+    font-size: small;
+    font-style: oblique;
+    font-weight:bold;
+}
+
+/* Item de cardápio */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0; /* Diminuir o espaçamento entre os itens */
+    width: 100%;
+    font-size: large;
+}
+
+.item-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-info input {
+    width: 60px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.menu-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* Botão */
+button {
+    background-color:rgb(68, 38, 17) ;
+    color: white;
+    font-family: 'spqr', sem serifa; 
+    font-size: 20px;
+    padding: 35px 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Diminuir espaço entre o botão e os itens */
+}
+
+button:hover {
+    background-color: rgb(17, 164, 169);
+}
+
+/* Resumo do pedido */
+.order-summary {
+    background: linear-gradient(45deg, rgb(125, 74, 74),rgb(68, 38, 17));
+    font-family: verdana, sem serifa;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    margin-bottom: 10px; /* Diminuir o espaço entre o resumo e o footer */
+    margin-left: auto;
+    margin-right: auto; /* Garantir que fique centralizado */
+}
+
+/* Alinha o resumo do pedido com o tamanho da div do cardápio */
+#resumoPedido {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px ;
+    margin-top: 20px; /* Ajuste o espaçamento entre o conteúdo e o footer */
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, rgb(82, 39, 8), rgb(177, 124, 124));
+    margin-bottom: 20px; /* Reduzir o espaço entre os ícones e o próximo conteúdo */
+    margin: 0 auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
